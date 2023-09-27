@@ -1,7 +1,5 @@
-name: my-shortie-app
-workdir: /app
-image: ./backend
-command: ["npm", "start"]
+deploy:
+  compose: docker-compose.yml
 environment:
   - JWT_SECRET=${JWT_SECRET}
   - MONGODB_URL=${MONGODB_URL}
