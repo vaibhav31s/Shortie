@@ -1,5 +1,5 @@
 name: shortie
-workdir: /app
+workdir: /app/backend
 image: shortie-shortie:okteto
 command: ["npm", "start"]
 environment:
