@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: shortie
     environment:
-      - JWT_SECRET=${JWT_SECRET}
-      - MONGODB_URL=${MONGODB_URL}
+      JWT_SECRET : ${JWT_SECRET}
+      MONGODB_URL : ${MONGODB_URL}
     ports:
       - 4000:4000

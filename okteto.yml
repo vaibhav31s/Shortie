@@ -1,5 +1,0 @@
-deploy:
-  compose: docker-compose.yml
-  environment:
-    JWT_SECRET : ${JWT_SECRET}
-    MONGODB_URL : ${MONGODB_URL}
