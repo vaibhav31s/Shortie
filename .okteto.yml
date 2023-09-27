@@ -1,9 +1,8 @@
 name: shortie
-workdir: /app/backend
-image: shortie-shortie:okteto
-command: ["npm", "start"]
-environment:
-  - JWT_SECRET=${JWT_SECRET}
-  - MONGODB_URL=${MONGODB_URL}
-forward:
-  - 4000:4000
+image: ./app
+build:
+  context: ./backend
+  dockerfile: Dockerfile
+  args:
+    - JWT_SECRET=${JWT_SECRET}
+    - MONGODB_URL=${MONGODB_URL}
