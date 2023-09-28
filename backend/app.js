@@ -20,6 +20,7 @@ app.get("/ping", (req, res) => {
 });
 
 console.log(process.env.MONGODB_URL);
+console.log(process.env.JWT_SECRET);
 
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
